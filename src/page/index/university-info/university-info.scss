@@ -1,0 +1,98 @@
+.university-info{
+  background-color: #0071ff;
+  width: 100%;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+
+
+  &-main{
+    width: calc(100% - 500px);
+    z-index: 10;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    &-block {
+      height: 15px;
+      width: 42px;
+      background-color: #43fafd;
+      margin-bottom: 80px;
+    }
+
+    &-p {
+      color: #fff;
+      margin: 20px 50px 20px 0;
+      word-break: keep-all;
+      line-height: 30px;
+    }
+
+    &-miss-corner{
+      width: 325px;
+      height: 150px;
+      display: inline-block;
+      z-index: 10;
+      opacity: 1;
+      margin: 20px 50px 0 0;
+      color: #fff;
+      font-weight: 900;
+      line-height: 150px;
+      text-align: center;
+      font-size: 28px;
+      letter-spacing: 6px;
+      text-shadow: 5px 5px 5px #101e56;
+      cursor: pointer;
+    }
+    .upon-corner{
+      background: no-repeat url(../../../assest/images/misss-upon-corned.png) ;
+      background-size: 100% 100%;
+    }
+    .lower-corner{
+      background: no-repeat url(../../../assest/images/misss-lower-corned.png) ;
+      background-size: 100% 100%;
+    }
+  }
+
+
+
+  &-background {
+    opacity: 0.1;
+    width: 100%;
+    position: absolute;
+    top: -248px;
+    z-index: 1;
+  }
+
+  &-title-container {
+    height: calc(100% - 100px);
+    width: 300px;
+    background-color: #0071ff;
+    bottom: 0;
+    right: 100px;
+    position: absolute;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 10px #424242cc;
+    z-index: 10;
+    p{
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-style: oblique;
+      font-size: 29px;
+      padding: 0 0 0 38px;
+      line-height: 20px;
+    }
+    &::after {
+      content: '';
+      background: no-repeat url(../../../assest/images/b993.png) ;
+      position: absolute;
+      background-size: 350px;
+      bottom: -150px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      opacity: 0.3;
+    }
+  }
+
+}

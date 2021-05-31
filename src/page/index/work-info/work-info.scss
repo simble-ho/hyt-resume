@@ -1,0 +1,86 @@
+.work-info{
+  background-color: #101e56;
+  width: 100%;
+  height: 700px;
+  position: relative;
+
+  &-main {
+    width: calc(100% - 500px);
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 10;
+
+    h2 {
+      text-align: right;
+      margin-right: 150px;
+      color: #1a5cff;
+      letter-spacing: 2px;
+      font-style: oblique;
+      position: relative;
+      font-size: 30px;
+
+      &::after {
+        content: attr(data-content);
+        right: 2px;
+        top: -3px;
+        color: #43fafd;
+        position: absolute;
+
+      }
+
+    }
+
+    &-p {
+      color: #fff;
+      margin: 20px 50px 20px 100px;
+      word-break: keep-all;
+      line-height: 50px;
+      letter-spacing: 1px;
+    }
+
+  }
+
+  &-background {
+    opacity: 0.6;
+    height: 700px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 777px;
+    z-index: 1;
+  }
+
+  &-title-container{
+    height: 100%;
+    width: 300px;
+    background-color: #1a5cff;
+    top: -40px;
+    left: 100px;
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #002452;
+    z-index: 10;
+    p{
+      color: #fff;
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-style: oblique;
+      font-size: 29px;
+      padding: 0 0 0 38px;
+      line-height: 20px;
+    }
+    &::after {
+      content: '';
+      background: no-repeat url(../../../assest/images/2236649599.png) ;
+      position: absolute;
+      background-size: 336px;
+      bottom: -246px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 492px;
+      opacity: 1;
+    }
+  }
+}

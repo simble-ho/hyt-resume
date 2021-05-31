@@ -1,0 +1,24 @@
+/*flex-左右布局*/
+.LF-layout{
+  display: flex;
+  flex-direction: row;
+}
+
+/*flex-上下布局*/
+.TB-layout{
+  display: flex;
+  flex-direction: row;
+}
+
+.none-line-stle-type{
+  list-style-type: none;
+}
+
+
+.text-gray-dark{
+  color: #040d21!important;
+}
+
+.text-gray {
+  color: #627597!important;
+}

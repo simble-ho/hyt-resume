@@ -1,0 +1,12 @@
+.proportion{
+  height: 300px;
+  width: 10px;
+  margin: 70px auto;
+  background-color: #dadfe9;
+  border-radius: 5px;
+  &-bar {
+    width: 100%;
+    background-image: linear-gradient(125deg, #a2facf,#64acff);
+    border-radius: 5px;
+  }
+}

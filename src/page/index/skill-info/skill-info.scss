@@ -1,0 +1,87 @@
+.skill-info{
+  background-color: #fff;
+  width: 100%;
+  height: 1100px;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 0;
+    background-color: #fff;
+    font-size: 60px;
+    padding: 10px 0 10px 43px;
+    position: relative;
+    z-index: 12;
+    display: inline-block;
+    letter-spacing: 30px;
+    font-style: oblique;
+    color: #4242423d;
+    &::before{
+      content: attr(data-content);
+      position: absolute;
+      top: 7px;
+      left: 40px;
+      color: #006cff;
+    }
+  }
+
+  &-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -44px;
+
+    &::before {
+      content: '';
+      height: 2px;
+      width: 1070px;
+      border-bottom: 2px dashed #ddd;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 494px);
+    }
+
+    &-image{
+      height: 80px;
+      width: 80px;
+      margin: 150px 15px 0 15px;
+      box-shadow: 0 0 10px 0 #ddd;
+      background-color: #fff;
+      position: relative;
+      border-radius: 9px;
+      &::before {
+        content: '';
+        height: 150px;
+        width: 2px;
+        border-right: 2px dashed #ddd;
+        position: absolute;
+        top: -150px;
+        left: calc(50% - 1px);
+      }
+      &::after {
+        content: attr(data-content);
+        position: absolute;
+        top: 82px;
+        left: 0;
+        color: #6275a49e;
+        font-size: small;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+      }
+    }
+
+    .H5JSC3Image{
+      width: 240px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 9px;
+    }
+  }
+}

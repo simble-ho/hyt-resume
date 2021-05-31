@@ -1,0 +1,205 @@
+  //@import "bourbon";
+
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,400,800,900);
+
+$image1: '//caraujo_pens.surge.sh/images/uZlR2bB.jpg';
+$image2: '//caraujo_pens.surge.sh/images/OfpVvOs.jpg';
+$image3: '//caraujo_pens.surge.sh/images/QYS0sMB.jpg';
+$image4: '//caraujo_pens.surge.sh/images/qXJds9L.jpg';
+$image5: '//caraujo_pens.surge.sh/images/0CRoXDg.jpg';
+$image6: '//caraujo_pens.surge.sh/images/TC4rvkU.jpg';
+$image7: '//caraujo_pens.surge.sh/images/KBhOYIr.jpg';
+$image8: '//caraujo_pens.surge.sh/images/cNmoLmL.jpg';
+$image9: '//caraujo_pens.surge.sh/images/onQyeOq.jpg';
+$image10: '//caraujo_pens.surge.sh/images/JXtviCi.jpg';
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@mixin abstlycenter($w,$h){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -($w*0.5);
+  margin-top: -($h*0.5);
+}
+
+@mixin a($width, $height: 55px){
+  width: $width;
+  height: $height;
+  line-height: $height;
+  @include abstlycenter($width, $height);
+}
+
+$elipsea:19px;
+
+@keyframes bganimation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+
+.first-screen{
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  //background: -webkit-radial-gradient(50% 50%,#0d1361,#000b1d);
+  background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+  background-size: 400%;
+  animation: bganimation 15s infinite;
+
+  overflow: hidden;
+  position: relative;
+
+
+  &-title {
+    position: absolute;
+    top: calc(50% - 166px);
+    left: calc(50% - 170px);
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 21px;
+    font-size: 99px;
+  }
+  &-work-time {
+    position: absolute;
+    color: #ffffff61;
+    font-size: 12px;
+    font-family: auto;
+    top: calc(50% + 10px);
+    left: calc(50% - 44px);
+    letter-spacing: 3px;
+  }
+  &-work-head {
+    position: absolute;
+    color: #fff;
+    font-size: 71px;
+    font-family: fantasy;
+    top: calc(50% - 190px);
+    left: calc(50% - 251px);
+    letter-spacing: -1px;
+    font-weight: bolder;
+  }
+  &-professional{
+    color: #fff;
+    position: absolute;
+    letter-spacing: 3px;
+  }
+  &-professional-titles {
+    bottom: 121px;
+    left: calc(50% - 129px);
+    font-size: 13px;
+    border: 1px solid #fff;
+    padding: 5px 14px;
+    border-radius: 2px;
+  }
+  &-professional-sub-titles {
+    bottom: 100px;
+    left: calc(50% - 129px);
+    font-size: 11px;
+    padding: 0px 14px;
+    color: #ffffff69;
+  }
+
+
+  section{
+    height: 100%;
+    width: 100%;
+    background : {
+      repeat: no-repeat;
+      size: cover;
+      position: center center;
+    }
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto 0px;
+    a{
+      text: {
+        transform: uppercase;
+        align: center;
+        decoration: none;
+      }
+      font: {
+        size: 4.875em;
+        weight: 900;
+      }
+      color: #fff;
+      &:after, &:before{
+        content: '';
+      }
+    }
+
+    &.first-screen-section{
+      position: relative;
+      z-index: 10;
+      a{
+        $w: 600px;
+        $h: 240px;
+        @include a($w, $h);
+        transition:(all 2s cubic-bezier(.21,1,.84,1.01));
+        &:before, &:after{
+          color: #fff;
+          font-weight: 900;
+          font-size: 30px;
+          text-transform: none;
+          display: block;
+          transition:(inherit);
+        }
+        &:before{
+          content: attr(data-bf);
+          position: absolute;
+          top: -127px;
+          left: -43px;
+        }
+        &:after{
+          content: attr(data-af);
+          position: absolute;
+          right: 0;
+          bottom: -124px;
+        }
+        &:hover{
+          transform:( scale(1.05) );
+          &:before{transform:( scale(1.2)  translate(-25px, -15px) );}
+          &:after{transform:( scale(1.2)  translate(25px, 15px) );}
+        }
+      }
+    }
+
+    .first-screen-section-title{
+      font-family: fantasy;
+      letter-spacing: 25px;
+      font-weight: 500;
+    }
+
+
+  }
+  &::after {
+    content: '';
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 50% 50% 0 0;
+    background: #fff;
+  }
+}
+
+
+
+
+
+
