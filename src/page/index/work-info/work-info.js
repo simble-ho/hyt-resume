@@ -6,13 +6,15 @@ import bgImage from '../../../assest/images/2236649599(2).png'
 class WorkInfo extends React.Component {
     constructor(props) {
         super(props);
+
+        this.state = {};
     }
 
     render(){
         return (
             <div className={'work-info'}>
 
-                <div className={`work-info-main animate__animated ${this.props.className1}`}>
+                <div className={`work-info-main animate__animated ${this.props.props1}`}>
 
                     <h2 data-content="广州尚融网络科技有限公司">广州尚融网络科技有限公司</h2>
                     <h2 data-content="2019.06 - 2021.04">2019.06 - 2021.04</h2>
@@ -36,9 +38,9 @@ class WorkInfo extends React.Component {
                 </div>
 
 
-                <img src={bgImage} className={'work-info-background'}/>
+                <img src={bgImage} className={'work-info-background'} alt=""/>
 
-                <div className={`work-info-title-container animate__animated ${this.props.className2}`}>
+                <div className={`work-info-title-container animate__animated ${this.props.props2}`}>
                     <p>工作经历</p>
                     <p>WORKING</p>
                     <p>EXPERIENCE</p>

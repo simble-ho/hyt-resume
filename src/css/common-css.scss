@@ -10,15 +10,25 @@
   flex-direction: row;
 }
 
-.none-line-stle-type{
+//去除文本装饰
+.none-line-style-type{
   list-style-type: none;
 }
 
-
+//深灰色文本
 .text-gray-dark{
   color: #040d21!important;
 }
 
+//灰色文本
 .text-gray {
   color: #627597!important;
+}
+
+//蓝色高亮
+.highlight-blue-mktg{
+  font-weight: bold!important;
+  color: #035bd6 !important;
+  font-size: large!important;
+  padding: 0 5px!important;
 }

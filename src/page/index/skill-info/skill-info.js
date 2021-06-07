@@ -17,58 +17,95 @@ class SkillInfo extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {}
+        this.state = {
+            className: '',
+            data: [
+                {
+                    DataContent: 'html5+JS+CSS3',
+                    src: H5JSC3Image,
+                    proportion: '85%'
+                },
+                {
+                    DataContent: 'es6',
+                    src: es6Image,
+                    proportion: '80%'
+                },
+                {
+                    DataContent: 'vue',
+                    src: vueImage,
+                    proportion: '90%'
+                },
+                {
+                    DataContent: 'sass',
+                    src: sassImage,
+                    proportion: '70%'
+                },
+                {
+                    DataContent: 'echarts',
+                    src: echartsImage,
+                    proportion: '70%'
+                },
+                {
+                    DataContent: 'iview',
+                    src: iviewImage,
+                    proportion: '90%'
+                },
+                {
+                    DataContent: 'element-ui',
+                    src: elementUiImage,
+                    proportion: '60%'
+                },
+                {
+                    DataContent: 'nginx',
+                    src: nginxImage,
+                    proportion: '60%'
+                },
+                {
+                    DataContent: 'github',
+                    src: githubImage,
+                    proportion: '60%'
+                },
+                {
+                    DataContent: 'react',
+                    src: reactImage,
+                    proportion: '20%'
+                }
+            ]
+        }
     }
-
     render(){
         return (
             <div className={'skill-info'}>
-
-                {/*<div className={'skill-info-background-title'}>PROFESSIONAL SKILLS</div>*/}
-
-
-                <h1 data-content={'专业技能'}>专业技能</h1>
-                <div className={'skill-info-icon-container'}>
-                    <div className={'skill-info-icon-container-image H5JSC3Image'} data-content="html5+JS+CSS3">
-                        <img src={H5JSC3Image}/>
-                        <Proportion value={'90%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="es6">
-                        <img src={es6Image}/>
-                        <Proportion value={'80%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="vue">
-                        <img src={vueImage}/>
-                        <Proportion value={'90%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="sass">
-                        <img src={sassImage}/>
-                        <Proportion value={'70%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'}  data-content="echarts">
-                      <img src={echartsImage}/>
-                        <Proportion value={'70%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="iview">
-                        <img src={iviewImage}/>
-                        <Proportion value={'80%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="element-ui">
-                         <img src={elementUiImage}/>
-                        <Proportion value={'60%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="nginx">
-                        <img src={nginxImage}/>
-                        <Proportion value={'60%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="github">
-                        <img src={githubImage}/>
-                        <Proportion value={'60%'}></Proportion>
-                    </div>
-                    <div className={'skill-info-icon-container-image'} data-content="react">
-                        <img src={reactImage}/>
-                        <Proportion value={'20%'}></Proportion>
-                    </div>
+                <h1 data-content={'专业技能'} className={`animate__animated ${this.props.props1}`}>专业技能</h1>
+                <div className={`skill-info-icon-container`}>
+                    {
+                        this.state.data.map( (item,index)=> {
+                            return (
+                                <div
+                                    className={'skill-info-icon-container-image'}
+                                    data-content={item.DataContent}
+                                    style={{
+                                        width: index === 0 ? '240px' : ''
+                                    }}
+                                    key={index}
+                                >
+                                    <img
+                                        className={`animate__animated ${this.props.props1}`}
+                                        src={item.src}
+                                        alt=""
+                                        style={{
+                                            animationDelay: `${(index + 5)/10}s`,
+                                            webkitAnimationDelay: `${(index + 5)/10}s`,
+                                        }}
+                                    />
+                                    <Proportion
+                                        props1={this.props.props2}
+                                        value={item.proportion}
+                                    />
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
         )

@@ -18,7 +18,7 @@ class LastScreen extends Component {
                 <p>FOR WATCHING</p>
                 <div>
                     {/*<img src={selfPhotoImage} className={'last-screen-QRCode'}/>*/}
-                    <img src={QRCode} className={'last-screen-QRCode'}/>
+                    <img src={QRCode} className={'last-screen-QRCode'} alt=""/>
 
                 </div>
                 <p>期待与您见面</p>

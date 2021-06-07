@@ -9,7 +9,7 @@
     height: 100%;
     position: relative;
     padding-top: 200px;
-    margin-top: 200px;
+    margin-top: 500px;
     &::after {
       content: '';
       height: 100%;
@@ -210,14 +210,14 @@
 .hologram-title {
   position: absolute;
   left: calc(50% - 209px);
-  top: 200px;
+  top: 144px;
   width: 600px!important;
   background-color: #fff;
   z-index: 12!important;
 }
 .hologram-describe {
   position: absolute;
-  top: 373px;
+  top: 320px;
   left: calc(50% - 203px);
   background-color: #fff;
   z-index: 12!important;
@@ -401,15 +401,19 @@ img.dmc-image7 {
 .dmc-describe1 {
   position: absolute;
   top: 360px;
-  left: calc(50% - 350px);
-  width: 700px!important;
+  left: 0;
+  width: 100%!important;
   background-color: #fff;
+  padding: 0 20%;
+  text-align: center;
 }
 .dmc-describe2 {
   position: absolute;
   top: 1067px;
-  left: calc(50% - 250px);
+  width: 100%!important;
   background-color: #fff;
+  padding: 0 25%;
+  text-align: center;
 }
 .dmc-image-line{
   position: absolute;
