@@ -1,7 +1,20 @@
 import React from 'react'
 import './skill-info.scss'
 
-import echartsImage from '../../../assest/images/skill-icon/echarts.png'
+import {
+    echartsImage,
+    elementUiImage,
+    es6Image,
+    githubImage,
+    H5JSC3Image,
+    iviewImage,
+    nginxImage,
+    reactImage,
+    sassImage,
+    vueImage
+} from '../../../util/base64'
+
+/*import echartsImage from '../../../assest/images/skill-icon/echarts.png'
 import elementUiImage from '../../../assest/images/skill-icon/element-ui.jpg'
 import es6Image from '../../../assest/images/skill-icon/es6.jpg'
 import githubImage from '../../../assest/images/skill-icon/github.jpg'
@@ -10,7 +23,8 @@ import iviewImage from '../../../assest/images/skill-icon/iview.png'
 import nginxImage from '../../../assest/images/skill-icon/nginx.jpg'
 import reactImage from '../../../assest/images/skill-icon/react.jpg'
 import sassImage from '../../../assest/images/skill-icon/sass.jpg'
-import vueImage from '../../../assest/images/skill-icon/vue.png'
+import vueImage from '../../../assest/images/skill-icon/vue.png'*/
+
 import Proportion from "./component/proportion";
 
 class SkillInfo extends React.Component {

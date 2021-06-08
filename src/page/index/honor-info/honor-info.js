@@ -1,7 +1,8 @@
 import React from "react";
 import './honor-info.scss'
 
-import honorImage from '../../../assest/images/honorImage.PNG'
+// import honorImage from '../../../assest/images/honorImage.PNG'
+import { HonorInfoBG1 } from '../../../util/base64';
 class HonorInfo extends React.Component{
     constructor(props) {
         super(props);
@@ -51,8 +52,8 @@ class HonorInfo extends React.Component{
                     </div>
                 </div>
 
-                <img src={honorImage} className={'honor-info-backImage'} alt=""/>
-                <img src={honorImage} className={'honor-info-backImage-opacity'} alt=""/>
+                <img src={HonorInfoBG1} className={'honor-info-backImage'} alt=""/>
+                <img src={HonorInfoBG1} className={'honor-info-backImage-opacity'} alt=""/>
             </div>
         )
     }

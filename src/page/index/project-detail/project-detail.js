@@ -1,19 +1,33 @@
 import React from "react";
 import './project-detail.scss'
 
-
-import combatPlatformImage1 from '../../../assest/images/project-image/combatPlatformImage1.png'
+import {
+    combatPlatformImage1,
+    combatPlatformImage2,
+    combatPlatformImage4,
+    hologramImage1,
+    hologramImage2,
+    cloudSearchImage1,
+    cloudSearchImage2,
+    laboratoryImage1,
+    laboratoryImage2,
+    laboratoryImage3,
+    laboratoryImage4,
+    dmcImage1,
+    dmcImage2,
+    dmcImage3,
+    dmcImage4,
+    dmcImage6
+} from  '../../../util/base64'
+/*import combatPlatformImage1 from '../../../assest/images/project-image/combatPlatformImage1.png'
 import combatPlatformImage2 from '../../../assest/images/project-image/combatPlatformImage2.png'
-// import combatPlatformImage3 from '../../../assest/images/project-image/combatplatformImage3.PNG'
 import combatPlatformImage4 from '../../../assest/images/project-image/combatPlatformImage4.png'
 
 import hologramImage1 from '../../../assest/images/project-image/hologramImage1.png'
 import hologramImage2 from '../../../assest/images/project-image/hologramImage2.png'
-// import hologramImage3 from '../../../assest/images/project-image/hologramImage3.png'
 
 import cloudSearchImage1 from '../../../assest/images/project-image/cloudSearchImage1.png'
 import cloudSearchImage2 from '../../../assest/images/project-image/cloudSearchImage2.png'
-// import cloudSearchImage3 from '../../../assest/images/project-image/cloudSearchImage3.png'
 
 import laboratoryImage1 from '../../../assest/images/project-image/laboradataImage1.png'
 import laboratoryImage2 from '../../../assest/images/project-image/laboradataImage2.png'
@@ -24,8 +38,7 @@ import dmcImage1 from '../../../assest/images/project-image/dmcImage1.png'
 import dmcImage2 from '../../../assest/images/project-image/dmcImage2.png'
 import dmcImage3 from '../../../assest/images/project-image/dmcImage3.png'
 import dmcImage4 from '../../../assest/images/project-image/dmcImage4.png'
-// import dmcImage5 from '../../../assest/images/project-image/dmcImage5.png'
-import dmcImage6 from '../../../assest/images/project-image/dmcImage6.png'
+import dmcImage6 from '../../../assest/images/project-image/dmcImage6.png'*/
 // import dmcImage7 from '../../../assest/images/project-image/dmcImage7.png'
 
 class ProjectDetail extends React.Component{

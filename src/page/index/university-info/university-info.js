@@ -1,7 +1,9 @@
 import React from 'react'
 import './university-info.scss'
 
-import zquImage from '../../../assest/images/zqu.jpg'
+// import zquImage from '../../../assest/images/zqu.jpg'
+import {zquImage} from '../../../util/base64'
+
 class UniversityInfo extends React.Component {
     constructor(props) {
         super(props);

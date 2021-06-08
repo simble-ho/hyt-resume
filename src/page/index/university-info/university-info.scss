@@ -42,14 +42,14 @@
       text-shadow: 5px 5px 5px #101e56;
       cursor: pointer;
     }
-    .upon-corner{
+    /*.upon-corner{
       background: no-repeat url(../../../assest/images/misss-upon-corned.png) ;
       background-size: 100% 100%;
     }
     .lower-corner{
       background: no-repeat url(../../../assest/images/misss-lower-corned.png) ;
       background-size: 100% 100%;
-    }
+    }*/
   }
 
 
@@ -58,7 +58,7 @@
     opacity: 0.1;
     width: 100%;
     position: absolute;
-    top: -248px;
+    top: 0;
     z-index: 1;
   }
 
