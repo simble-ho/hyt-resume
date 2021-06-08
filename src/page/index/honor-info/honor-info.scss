@@ -11,11 +11,11 @@
     top: 0;
     right: 0;
     height: 100%;
-    width: calc(100% - 700px);
+    width: calc(100% - 40vw);
     color: #fff;
-    padding: 0 15% 0 5%;
-    z-index: 12;
-    text-align: right;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 5%;
 
     h1 {
       font-size: 70px;
@@ -45,6 +45,7 @@
       span:nth-child(2) {
         font-weight: 900;
         letter-spacing: 4px;
+        white-space: nowrap;
       }
     }
   }
@@ -52,13 +53,14 @@
   &-backImage {
     position: absolute;
     left: 0;
-    top: calc(50% - 250px);
-    height: 500px;
+    top: calc(50% - 45vh);
+    height: 90vh;
+    width: 40vw;
   }
   &-backImage-opacity{
     position: absolute;
-    right: calc(-50% + 500px);
-    top: calc(-50% + 292px);
+    right: -30%;
+    top: -16%;
     height: 120%;
     opacity: 0.07;
     z-index: 10;

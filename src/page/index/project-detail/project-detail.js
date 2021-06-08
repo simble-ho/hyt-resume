@@ -117,7 +117,7 @@ class ProjectDetail extends React.Component{
                     <div className={'project-detail-main-single cloud-search'}>
 
                         <div className={'project-detail-main-single-block cloud-search-title'}>
-                            <h2>广州海关云搜索系统</h2>
+                            <h2>广州海关云搜索</h2>
                         </div>
 
                         <div className={`project-detail-main-single-block cloud-search-describe ${this.props.scrollToTop > 8100 ? 'animate__animated animate__fadeInLeft' : ''}`}>
@@ -147,7 +147,7 @@ class ProjectDetail extends React.Component{
 
 
                         <div className={'project-detail-main-single-block hologram-title'}>
-                            <h2>广州缉私全息画像系统</h2>
+                            <h2>广州缉私全息画像</h2>
                         </div>
 
                         <div className={`project-detail-main-single-block hologram-describe ${this.props.scrollToTop > 9000 ? 'animate__animated animate__fadeInRight' : ''}`}>

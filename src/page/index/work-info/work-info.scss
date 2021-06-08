@@ -5,7 +5,7 @@
   position: relative;
 
   &-main {
-    width: calc(100% - 500px);
+    width: calc(100% - 400px);
     position: absolute;
     right: 0;
     top: 50px;
@@ -37,6 +37,10 @@
       word-break: keep-all;
       line-height: 50px;
       letter-spacing: 1px;
+      blockquote {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
     }
 
   }
