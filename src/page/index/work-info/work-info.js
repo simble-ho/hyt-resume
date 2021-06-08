@@ -2,7 +2,8 @@ import React from 'react'
 import './work-info.scss'
 
 
-import bgImage from '../../../assest/images/2236649599(2).png'
+// import bgImage from '../../../assest/images/2236649599(2).png'
+import {WorkInfoBG2} from '../../../util/base64'
 class WorkInfo extends React.Component {
     constructor(props) {
         super(props);
@@ -38,7 +39,7 @@ class WorkInfo extends React.Component {
                 </div>
 
 
-                <img src={bgImage} className={'work-info-background'} alt=""/>
+                <img src={WorkInfoBG2} className={'work-info-background'} alt=""/>
 
                 <div className={`work-info-title-container animate__animated ${this.props.props2}`}>
                     <p>工作经历</p>
