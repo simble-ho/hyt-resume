@@ -41,7 +41,6 @@ class Index extends Component {
     }
 
     handleScroll(){
-        console.log(document.documentElement.scrollTop);
         if (document.documentElement.scrollTop >= 250 && document.documentElement.scrollTop < 900) {
             this.setState({
                 basisInfoProps: 'animate__slideInUp'
@@ -73,7 +72,6 @@ class Index extends Component {
            this.setState({
                scrollToTop: document.documentElement.scrollTop,
            })
-            console.log(this.state);
         }
     }
 
