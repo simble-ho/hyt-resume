@@ -1,7 +1,7 @@
 import React from "react";
 import './project-detail.scss'
 
-import {
+/*import {
     combatPlatformImage1,
     combatPlatformImage2,
     combatPlatformImage4,
@@ -18,8 +18,8 @@ import {
     dmcImage3,
     dmcImage4,
     dmcImage6
-} from  '../../../util/base64'
-/*import combatPlatformImage1 from '../../../assest/images/project-image/combatPlatformImage1.png'
+} from  '../../../util/base64'*/
+import combatPlatformImage1 from '../../../assest/images/project-image/combatPlatformImage1.png'
 import combatPlatformImage2 from '../../../assest/images/project-image/combatPlatformImage2.png'
 import combatPlatformImage4 from '../../../assest/images/project-image/combatPlatformImage4.png'
 
@@ -38,7 +38,7 @@ import dmcImage1 from '../../../assest/images/project-image/dmcImage1.png'
 import dmcImage2 from '../../../assest/images/project-image/dmcImage2.png'
 import dmcImage3 from '../../../assest/images/project-image/dmcImage3.png'
 import dmcImage4 from '../../../assest/images/project-image/dmcImage4.png'
-import dmcImage6 from '../../../assest/images/project-image/dmcImage6.png'*/
+import dmcImage6 from '../../../assest/images/project-image/dmcImage6.png'
 // import dmcImage7 from '../../../assest/images/project-image/dmcImage7.png'
 
 class ProjectDetail extends React.Component{

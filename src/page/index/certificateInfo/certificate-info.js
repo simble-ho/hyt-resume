@@ -1,8 +1,8 @@
 import React from "react";
 import './certificate-info.scss'
 
-// import certificateImage from '../../../assest/images/certificateImage.PNG'
-import {CertificateInfoBG1} from '../../../util/base64';
+import CertificateInfoBG1 from '../../../assest/images/certificateImage.PNG'
+// import {CertificateInfoBG1} from '../../../util/base64';
 class CertificateInfo extends React.Component{
     constructor(props) {
         super(props);

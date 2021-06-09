@@ -2,8 +2,8 @@ import React from 'react'
 import './work-info.scss'
 
 
-// import bgImage from '../../../assest/images/2236649599(2).png'
-import {WorkInfoBG2} from '../../../util/base64'
+import WorkInfoBG2 from '../../../assest/images/2236649599(2).png'
+// import {WorkInfoBG2} from '../../../util/base64'
 class WorkInfo extends React.Component {
     constructor(props) {
         super(props);

@@ -1,8 +1,8 @@
 import React from "react";
 import './honor-info.scss'
 
-// import honorImage from '../../../assest/images/honorImage.PNG'
-import { HonorInfoBG1 } from '../../../util/base64';
+import HonorInfoBG1 from '../../../assest/images/honorImage.PNG'
+// import { HonorInfoBG1 } from '../../../util/base64';
 class HonorInfo extends React.Component{
     constructor(props) {
         super(props);
