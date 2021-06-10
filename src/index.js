@@ -4,7 +4,7 @@ import './index.css';
 import Index from './page/index/index'
 import FirstLoading from "./page/first-loading/first-loading";
 import reportWebVitals from './reportWebVitals';
-
+import 'lib-flexible'
 
 function listen () {
     if (document.readyState == 'complete') { // 资源加载完成

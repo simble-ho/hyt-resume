@@ -88,3 +88,27 @@
     }
   }
 }
+
+@media screen and (max-width: 850px){/* 可视区域小于 850px, 设置更小font-size属性 */
+  .work-info-title-container{
+    display: none;
+  }
+  .work-info-main {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    z-index: 10;
+  }
+  .work-info-main-p {
+    color: #fff;
+    margin: 10px 10px 10px 20px;
+    word-break: break-all;
+    line-height: 50px;
+    letter-spacing: 1px;
+    blockquote {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

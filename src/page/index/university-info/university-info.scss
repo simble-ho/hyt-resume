@@ -23,7 +23,7 @@
       color: #fff;
       margin: 20px 50px 20px 0;
       word-break: keep-all;
-      line-height: 30px;
+      line-height: 50px;
     }
 
     &-miss-corner{
@@ -95,4 +95,18 @@
     }
   }
 
+}
+
+
+@media screen and (max-width: 850px){/* 可视区域小于 850px, 设置更小font-size属性 */
+  .university-info-title-container{
+    display: none;
+  }
+  .university-info-main {
+    width: calc(100% - 100px);
+    z-index: 10;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
 }
